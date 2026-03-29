@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiceNest - Authentic Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name ="viewport"content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>SpiceNest</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#recipes" class="nav-link">Recipes</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Authentic <span class="highlight">Indian Recipes</span></h1>
+            <p>Traditional flavors, step-by-step instructions, and mouthwatering dishes from every corner of India Explore a rich collection of traditional and modern Indian dishes made with love. 
+  From spicy street food to royal curries, learn step-by-step recipes that bring 
+  the true taste of India to your kitchen. <br> <br>“Explore. Cook. Enjoy.”</p>
+            <div class="hero-buttons">
+                <a href="#recipes" class="btn btn-primary">Explore Recipes</a>
+                <a href="#categories" class="btn btn-secondary">View Categories</a>
+            </div>
+        </div>
+        <div class="hero-image">
+    <div class="shape-bg"></div>
+    <img src="indian_thali-removebg-preview.png" alt="indian food" class="food-img">
+</div>
+
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Recipe Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="vegetarian">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Vegetarian</h3>
+                    <p>Healthy & delicious veg dishes</p>
+                </div>
+                <div class="category-card" data-category="non-veg">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <h3>Non-Veg</h3>
+                    <p>Rich meaty flavors</p>
+                </div>
+                <div class="category-card" data-category="snacks">
+                    <i class="fas fa-cookie-bite"></i>
+                    <h3>Snacks</h3>
+                    <p>Perfect tea-time treats</p>
+                </div>
+                <div class="category-card" data-category="desserts">
+                    <i class="fas fa-ice-cream"></i>
+                    <h3>Desserts</h3>
+                    <p>Sweet Indian delights</p>
+                </div>
+                <div class="category-card" data-category="rice dishes">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Rice Dishes</h3>
+                    <p>Fragrant rice specialties</p>
+                </div>
+                <div class="category-card" data-category="breads">
+                    <i class="fas fa-bread-slice"></i>
+                    <h3>Breads</h3>
+                    <p>Fresh tandoori breads</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Recipes</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+                    <button class="filter-btn" data-filter="non-veg">Non-Veg</button>
+                    <button class="filter-btn" data-filter="snacks">Snacks</button>
+                    <button class="filter-btn" data-filter="breads">breads</button>
+                    <button class="filter-btn" data-filter="rice dishes">rice dishes</button>
+                    <button class="filter-btn" data-filter="desserts">desserts</button>
+
+                </div>
+            </div>
+            <div class="recipes-grid" id="recipesGrid">
+                <!-- Recipes will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About SpiceNest</h2>
+                    <p>Discover the rich tapestry of Indian cuisine with our collection of authentic recipes. From the spicy curries of the South to the creamy gravies of the North, we bring you the best of Indian cooking.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100+ Authentic Recipes</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Step-by-Step Instructions</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Nutrition Information</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="footer image.jpg" alt="Indian Cooking">
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>SpiceNest</span>
+                    </div>
+                    <p>Your guide to authentic Indian cooking</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SpiceNest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+    <script src="script.js"></script>
+</html>
